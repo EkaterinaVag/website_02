@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="top-header">
+        <nav class="top-header__nav">
+          <ul class="top-header__nav-list">
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Гарантия и возврат</a></li>
+            <li>
+              <select class="top-header__select">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-header">
+        <img class="main-header__logo" src="/imgs/logo.png" alt="Логотип" />
+        <button class="burger-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-list">
+            <li><a href="#">КАТАЛОГ</a></li>
+            <li><a href="#">О КОМПАНИИ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <form action="" method="GET" class="search-form">
+            <input
+              class="search-form__input"
+              type="text"
+              id="search-input"
+              name="query"
+              placeholder="Поиск"
+              aria-label="Поиск товаров"
+              required />
+          </form>
+
+          <a href="#" class="cart-button">
+            <span class="cart-button__count">3</span>
+            Корзина
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-results" aria-labelledby="search-results-heading">
+        <h2 class="search-results__title" id="search-results-heading">
+          Результаты поиска
+        </h2>
+        <div class="card-list">
+          <article class="card-list__card">
+            <div class="card-list__card-price">3490 ₽</div>
+            <h3 class="card-list__card-title">Встраиваемый светильник Markt</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_1.png"
+              alt="Встраиваемый светильник Markt" />
+            <div class="card-list__sale">Акция</div>
+            <div class="card-list__info">
+              <a class="card-list__info-button" href="#">Подробнее</a>
+            </div>
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">6700 ₽</div>
+            <h3 class="card-list__card-title">Линейный светильник ARG</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_2.png"
+              alt="Линейный светильник ARG" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">5060 ₽</div>
+            <h3 class="card-list__card-title">Сведодиодный светильник</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_3.png"
+              alt="Сведодиодный светильник" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">3490 ₽</div>
+            <h3 class="card-list__card-title">Встраиваемый светильник Markt</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_1.png"
+              alt="Встраиваемый светильник Markt" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">6700 ₽</div>
+            <h3 class="card-list__card-title">Линейный светильник ARG</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_2.png"
+              alt="Линейный светильник ARG" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">5060 ₽</div>
+            <h3 class="card-list__card-title">Сведодиодный светильник</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_3.png"
+              alt="Сведодиодный светильник" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">3490 ₽</div>
+            <h3 class="card-list__card-title">Встраиваемый светильник Markt</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_1.png"
+              alt="Встраиваемый светильник Markt" />
+          </article>
+          <article class="card-list__card">
+            <div class="card-list__card-price">6700 ₽</div>
+            <h3 class="card-list__card-title">Линейный светильник ARG</h3>
+            <img
+              class="card-list__card-image"
+              src="/imgs/img_2.png"
+              alt="Линейный светильник ARG" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__branding">
+          <img
+            src="/imgs/logo_footer.png"
+            alt="Логотип компании"
+            class="footer__branding-logo" />
+          <p class="footer__branding-recaptcha">
+            Этот сайт защищен от спама службой reCAPTCHA Google.
+            <a href="#">Политика конфиденциальности</a>/<a href="#"
+              >Условия предоставления услуг</a
+            >
+          </p>
+        </div>
+
+        <div class="footer__contact-group">
+          <div class="footer__address">
+            <h3>Адрес</h3>
+            <address>
+              <p>Текст, Текст, Текст</p>
+            </address>
+          </div>
+
+          <div class="footer__contacts">
+            <h3>Контакты</h3>
+            <p>
+              Email:
+              <a href="mailto:urban.dwelling@yandex.com"
+                >urban.dwelling@yandex.com</a
+              >
+            </p>
+            <p>Телефон: <a href="tel:+79999999999">8 (999) 999-99-99</a></p>
+          </div>
+        </div>
+
+        <nav class="footer__nav">
+          <h3>Услуги</h3>
+          <ul class="footer__nav-list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Гарантия и возврат</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__legal-area">
+          <a href="#">Публичная оферта</a>
+          <a href="#">Политика персональных данных</a>
+          <img
+            src="/imgs/payment.png"
+            alt="Способы оплаты"
+            class="footer__legal-payment" />
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cardImages = document.querySelectorAll('.card-list__card-image');
+        cardImages.forEach((img) => {
+          img.onload = () => {
+            img
+              .closest('.card-list__card')
+              .style.setProperty('--image-height', `${img.offsetHeight}px`);
+          };
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const nav = document.querySelector('.main-header__nav');
+
+        burgerMenu.addEventListener('click', function () {
+          nav.classList.toggle('active');
+          burgerMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', function (event) {
+          if (
+            !nav.contains(event.target) &&
+            !burgerMenu.contains(event.target) &&
+            nav.classList.contains('active')
+          ) {
+            nav.classList.remove('active');
+            burgerMenu.classList.remove('active');
+          }
+        });
+
+        window.addEventListener('resize', function () {
+          if (window.innerWidth > 770 && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            burgerMenu.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
