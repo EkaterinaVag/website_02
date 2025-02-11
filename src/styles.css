@@ -1,19 +1,19 @@
 @font-face {
     font-family: Lato;
     font-weight: 400;
-    src: url("/fonts/Lato-Regular.ttf");
+    src: url("fonts/Lato-Regular.ttf");
 }
 
 @font-face {
     font-weight: 600;
     font-family: Lato;
-    src: url("/fonts/Lato-Semibold.ttf");
+    src: url("fonts/Lato-Semibold.ttf");
 }
 
 @font-face {
     font-weight: 400;
     font-family: Korataki;
-    src: url("/fonts/korataki.otf");
+    src: url("fonts/korataki.otf");
 }
 
 * {
@@ -221,7 +221,7 @@
 }
 
 .search-form__input {
-    background-image: url('/imgs/search.png');
+    background-image: url('imgs/search.png');
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -242,7 +242,7 @@
         text-indent: -9999px;
         overflow: hidden;
         background-color: #231815;
-        background-image: url('/imgs/search-normal.png');
+        background-image: url('imgs/search-normal.png');
         background-position: center center;
     }
 }
@@ -265,7 +265,7 @@
     display: inline-block;
     width: 32px;
     height: 32px;
-    background-image: url('/imgs/cart.png');
+    background-image: url('imgs/cart.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -302,8 +302,7 @@
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .card-list__card {
@@ -312,7 +311,7 @@
     justify-content: space-between;
     width: calc(25% - 30px);
     max-width: 320px;
-    height: 565px;
+    height: auto;
     position: relative;
 }
 
@@ -421,6 +420,39 @@
         top: 389px;
     }
 }
+
+@media (max-width: 390px) {
+    .search-results__title {
+        font-size: 24px;
+    }
+
+    .search-results {
+        margin: 40px 35px;
+    }
+
+    .card-list {
+        max-width: 320px;
+        row-gap: 30px;
+        column-gap: 10px;
+    }
+
+    .card-list__card {
+        width: 155px;
+        height: 320px;
+    }
+
+    .card-list__info {
+        display: none;
+    }
+
+    .card-list__sale {
+        font-size: 14px;
+        width: 70px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+    }
+ }
 
 
 .footer {
@@ -586,5 +618,55 @@
 
     .footer__legal-payment {
         margin-top: 80px;
+    }
+}
+
+@media (max-width: 770px) {
+    .footer {
+        height: 867px;
+    }
+    
+    .footer-container {
+        margin: 0 35px;
+        padding: 40px 0;
+    }
+
+    .footer__contact-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer__nav {
+        position: absolute;
+        top: 338px;
+        gap: 20px;
+        justify-content: space-between;
+        left: 0;
+        height: 198px;
+    }
+
+    .footer__nav-list {
+        margin: 0;
+        gap: 20px;
+    }
+
+    .footer__legal-area {
+        position: absolute;
+        top: 590px;
+        align-items: flex-start;
+    }
+
+    .footer__branding-recaptcha {
+        position: absolute;
+        display: block;
+        height: 84px;
+        margin: 0;
+        top: 745px;
+        left: 0;
+    }
+
+    .footer__legal-payment {
+        margin-top: 25px;
+        left: 0;
     }
 }
