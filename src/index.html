@@ -27,13 +27,13 @@
       </div>
 
       <div class="main-header">
-        <img class="main-header__logo" src="imgs/logo.png" alt="Логотип">
-        <button class="burger-menu" aria-label="Открыть меню">
+        <h1 class="main-header__logo"><img src="imgs/logo.png" alt="Логотип"></h1>
+        <button class="burger-menu" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <nav class="main-header__nav">
+        <nav class="main-header__nav" id="main-nav">
           <ul class="main-header__nav-list">
             <li><a href="#">КАТАЛОГ</a></li>
             <li><a href="#">О КОМПАНИИ</a></li>
@@ -42,7 +42,7 @@
         </nav>
 
         <div class="header-actions">
-          <form action="" method="GET" class="search-form">
+          <form action="" method="GET" class="search-form" role="search">
             <input
               class="search-form__input"
               type="text"
@@ -53,7 +53,7 @@
               required>
           </form>
 
-          <a href="#" class="cart-button">
+          <a href="#" class="cart-button" aria-label="Корзина">
             <span class="cart-button__count">3</span>
             Корзина
           </a>
@@ -67,20 +67,21 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer__branding">
+        <section class="footer__branding">
           <img
             src="imgs/logo_footer.png"
             alt="Логотип компании"
-            class="footer__branding-logo">
+            class="footer__branding-logo"
+            loading="lazy">
           <p class="footer__branding-recaptcha">
             Этот сайт защищен от спама службой reCAPTCHA Google.
             <a href="#">Политика конфиденциальности</a>/<a href="#"
               >Условия предоставления услуг</a
             >
           </p>
-        </div>
+        </section>
 
-        <div class="footer__contact-group">
+        <section class="footer__contact-group">
           <div class="footer__address">
             <h3>Адрес</h3>
             <address>
@@ -98,9 +99,9 @@
             </p>
             <p>Телефон: <a href="tel:+79999999999">8 (999) 999-99-99</a></p>
           </div>
-        </div>
+        </section>
 
-        <nav class="footer__nav">
+        <nav class="footer__nav" aria-label="Дополнительная навигация">
           <h3>Услуги</h3>
           <ul class="footer__nav-list">
             <li><a href="#">Каталог</a></li>
@@ -111,14 +112,15 @@
           </ul>
         </nav>
 
-        <div class="footer__legal-area">
+        <section class="footer__legal-area">
           <a href="#">Публичная оферта</a>
           <a href="#">Политика персональных данных</a>
           <img
             src="imgs/payment.png"
             alt="Способы оплаты"
-            class="footer__legal-payment">
-        </div>
+            class="footer__legal-payment"
+            loading="lazy">
+        </section>
       </div>
     </footer>
     <script>
