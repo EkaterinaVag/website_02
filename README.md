@@ -1,4 +1,4 @@
-Деплой сайта по [тут](https://website-02-hgg1lrewh-ekaterinas-projects-baa77f20.vercel.app/)
+Деплой сайта [тут](https://website-02-hgg1lrewh-ekaterinas-projects-baa77f20.vercel.app/)
 
 ## Описание
 
