@@ -16,9 +16,8 @@ document.addEventListener('mouseover', (e) => {
   }
 });
 
-document.addEventListener('mouseout', (e) => {
-  const imgContainer = e.target.closest('.card-list__card-image-container');
-  if (imgContainer) {
+document.addEventListener('mouseout', () => {
+  if (state.uiState.activeProductId) {
     state.uiState.activeProductId = '';
     render(state);
   }
