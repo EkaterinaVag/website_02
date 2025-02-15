@@ -236,6 +236,20 @@
         background-color: #231815;
         background-image: url('imgs/search-normal.png');
         background-position: center;
+        transition: all 0.5s ease;
+    }
+
+    .search-form__input:hover {
+        border: 1px solid #F5F5F5;
+        border-radius: 88.64px;
+        width: 170px;
+        height: 39px;
+        padding-left: 21px;
+        background-image: url('imgs/search.png');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-color: transparent;
+        text-indent: 0; 
     }
 }
 
